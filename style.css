@@ -7,3 +7,17 @@ td, th {
     border: 1px solid black;
     padding: 5px 10px;
 }
+
+.container {
+    width: 50vw;
+    /*display: flex;*/
+}
+
+#form {
+    /*justify-content: flex-end;*/
+}
+
+#coffeeList {
+    /*justify-content: flex-start;*/
+
+}
