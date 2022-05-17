@@ -21,5 +21,8 @@ td, th {
 
 #coffeeList {
     /*justify-content: flex-start;*/
+}
 
+hr {
+    height: 4px;
 }

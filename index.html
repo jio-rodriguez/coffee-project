@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body class="mx-5">
     <h1 class="row justify-content-center">Coffee!</h1>
@@ -24,32 +25,45 @@
         </div>
 
     <div id="form" class="row w-50">
-        <div class="dropdown d-flex flex-column justify-content-between">
+        <div class=" col-12 d-flex flex-column align-self-center">
+            <label for="roast-selection"><h5>Roast</h5></label>
+            <select id="roast-selection" class="form-select w-100" aria-label="Default select example">
+                <option selected>all</option>
+                <option value="1">light</option>
+                <option value="2">medium</option>
+                <option value="3">dark</option>
+            </select>
             <div>
-            <h5>Roast</h5>
-            <button class="btn btn-light col-6 dropdown-toggle w-100 mb-3" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                  All
-            </button>
-            <ul id="roast-selection" class="w-75 row dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                <li><a class="dropdown-item" href="#">all</a></li>
-                <li><a class="dropdown-item" href="#">light</a></li>
-                <li><a class="dropdown-item" href="#">medium</a></li>
-                <li><a class="dropdown-item" href="#">dark</a></li>
-            </ul>
+                <label for="search"><h5>Coffee Name</h5></label>
+                <input type="text" id="search" class=" w-100 mb-2">
+                <input class="d-flex w-100 justify-content-center text-bg-primary rounded-2 border-0" id="submit" type="submit" />
             </div>
-            <div>
-                <h5>Coffee Name</h5>
-                <input type="text" id="search" class="mb-3 w-100">
-            </div>
-            <input class="d-flex justify-content-center text-bg-primary rounded-2 border-0" id="submit" type="submit" />
+        </div>
+        <hr/>
+        <div class="col-12">
+            <div class="d-flex col-12 justify-content-center align-self-start">
+            <div class="align-self-start">
+                <h2 class="">Add a Coffee</h2>
+                <div>
 
+                    <label for="roast-selection-add"><h5>Roast</h5></label>
+                    <select id="roast-selection-add" class="form-select w-100" aria-label="Default select example">
+                        <option selected>all</option>
+                        <option value="1">light</option>
+                        <option value="2">medium</option>
+                        <option value="3">dark</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="add"><h5>Name</h5></label>
+                    <input type="text" id="add" class=" w-100 mb-2">
+                    <input class="d-flex w-100 justify-content-center text-bg-primary rounded-2 border-0" id="submitForAdd" type="submit" />
+                </div>
+            </div>
         </div>
-        <div class="">
-            <hr/>
-            <h2 class="justify-content-center">Add a Coffee</h2>
         </div>
+
     </div>
-
     </div>
     <script src="main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
