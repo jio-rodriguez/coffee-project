@@ -22,17 +22,26 @@
                 <div class="w-100 justify-content-between" id="coffees"></div>
 <!--            </table>-->
         </div>
-    <div id="form" class="d-flex w-50">
-        <form>
-            <label for="roast-selection"></label>
-            <select id="roast-selection">
-                <option>light</option>
-                <option>medium</option>
-                <option>dark</option>
-            </select>
+
+    <div id="form" class="row w-50">
+        <div class="dropdown">
+            <button class="btn btn-light col-6 dropdown-toggle w-75" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                All
+            </button>
+            <ul id="roast-selection" class="w-75 row dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="#">all</a></li>
+                <li><a class="dropdown-item" href="#">light</a></li>
+                <li><a class="dropdown-item" href="#">medium</a></li>
+                <li><a class="dropdown-item" href="#">dark</a></li>
+            </ul>
             <input id="submit" type="submit" />
-        </form>
+        </div>
+        <div class="row">
+            <hr/>
+            <h2 class="justify-content-center">Add a Coffee</h2>
+        </div>
     </div>
+
     </div>
     <script src="main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
