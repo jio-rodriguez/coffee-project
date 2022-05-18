@@ -39,7 +39,7 @@
         <div class=" col-12 d-flex flex-column align-self-center">
             <label for="roast-selection"><h5 class="text-white">Roast</h5></label>
             <select id="roast-selection" class="form-select w-100" aria-label="Default select example">
-                <option selected value="all">all</option>
+                <option id="all" selected value="all">all</option>
                 <option value="light">light</option>
                 <option value="medium">medium</option>
                 <option value="dark">dark</option>
@@ -59,14 +59,14 @@
 
                     <label for="roast-selection-add"><h5 class="text-white">Roast</h5></label>
                     <select id="roast-selection-add" class="form-select w-100" aria-label="Default select example">
-                        <option selected value="1">light</option>
-                        <option value="2">medium</option>
-                        <option value="3">dark</option>
+                        <option selected value="light">light</option>
+                        <option value="medium">medium</option>
+                        <option value="dark">dark</option>
                     </select>
                 </div>
                 <div>
-                    <label for="add"><h5 class="text-white">Name</h5></label>
-                    <input type="text" id="add" class=" w-100 mb-2">
+                    <label for="addedCoffee"><h5 class="text-white">Name</h5></label>
+                    <input type="text" id="addedCoffee" class=" w-100 mb-2">
                     <input class="d-flex w-100 justify-content-center rounded-2 border-0" id="submitForAdd" type="submit" />
                 </div>
             </div>
