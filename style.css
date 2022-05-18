@@ -67,7 +67,7 @@ video {
 }
 
 #coffees {
-    background: rgba(130, 116, 94, .8);
+    background: rgba(130, 116, 94, .5);
     border: ghostwhite solid;
     border-radius: 10px;
     margin-right: 2em;
@@ -75,7 +75,7 @@ video {
 
 .header {
     font-family: 'Rye', sans-serif;
-    background: rgba(130, 116, 59, 1);
+    background: rgba(200, 200, 200, 1);
     border-bottom: ghostwhite solid;
 }
 
@@ -84,7 +84,7 @@ video {
 }
 
 #form {
-    background: rgba(130, 116, 94, .8);
+    background: rgba(130, 116, 94, .5);
     border: ghostwhite solid;
     border-radius: 10px;
 }
@@ -117,4 +117,11 @@ video {
 #submitForAdd {
     background: rgba(130, 116, 94, .9);
     color: ghostwhite;
+}
+
+#about {
+    margin: 2em;
+    background: rgba(130, 116, 94, .5);
+    border: ghostwhite solid;
+    border-radius: 10px;
 }
