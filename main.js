@@ -3,8 +3,8 @@
 function renderCoffee(coffee) {
     var html = '<div class="coffee row col-6 d-inline-flex m-auto ">';
     html += '<div class="d-none">' + coffee.id + '</div>';
-    html += '<div class="col-3 d-flex m-2 w-20 "><h2>' + coffee.name + '</h2>';
-    html += '<p class="m-1 " style="color: grey; font-size: 1.5em">' + coffee.roast + '</p></div>';
+    html += '<div class="col-3 text-white d-flex m-2 w-20 "><h2>' + coffee.name + '</h2>';
+    html += '<p class="m-1 .text-white-50" style="color: grey; font-size: 1.5em">' + coffee.roast + '</p></div>';
     html += '</div>';
 
     return html;
