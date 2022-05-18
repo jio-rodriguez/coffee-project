@@ -1,5 +1,5 @@
 "use strict"
-
+// Function to create html elements with a single coffee object
 function renderCoffee(coffee) {
     var html = '<div class="coffee row col-6 d-inline-flex m-auto ">';
     html += '<div class="d-none">' + coffee.id + '</div>';
@@ -9,7 +9,7 @@ function renderCoffee(coffee) {
 
     return html;
 }
-
+// Function to create html elements with all coffee objects
 function renderCoffees(coffees) {
     var html = '';
     for(var i = coffees.length - 1; i >= 0; i--) {
@@ -17,7 +17,7 @@ function renderCoffees(coffees) {
     }
     return html;
 }
-
+// Function to update the coffee list with the type of coffee roast. First option in form
 function updateCoffees(e) {
     e.preventDefault(); // don't submit the form, we just want to update the data
     var selectedRoast = roastSelection.value;
@@ -29,7 +29,7 @@ function updateCoffees(e) {
     });
     tbody.innerHTML = renderCoffees(filteredCoffees);
 }
-
+// Function to populate the coffee list automatically on the left hand side
 function updateCoffeesByName(e) {
     e.preventDefault(); // don't submit the form, we just want to update the data
     var selectedName = searchBar.value;
@@ -41,7 +41,7 @@ function updateCoffeesByName(e) {
     });
     tbody.innerHTML = renderCoffees(filteredCoffees);
 }
-
+// Function to update the left-hand list of coffee by roast
 function updateCoffeesByRoast(e) {
     e.preventDefault(); // don't submit the form, we just want to update the data
     var selectedRoast = roastSelection.value;
@@ -53,7 +53,7 @@ function updateCoffeesByRoast(e) {
     });
     tbody.innerHTML = renderCoffees(filteredCoffees);
 }
-
+// Function to add a coffee using the bottom right form and display it in the list on the left
 function addCoffee(e){
     e.preventDefault(); // don't submit the form, we just want to update the data
     let addedRoastType = roastTypeInput.value;
@@ -71,13 +71,10 @@ function addCoffee(e){
         category: 'all'
     }
     coffees.push(addedCoffee);
-    console.log(coffees)
     coffees.forEach(function (coffee) {
         filteredCoffees.push(coffee)
     })
     tbody.innerHTML = renderCoffees(filteredCoffees);
-
-
 }
 
 
@@ -107,10 +104,15 @@ let searchBar = document.querySelector('#search')
 let roastTypeInput = document.querySelector("#roast-selection-add")
 let roastInput = document.querySelector('#addedCoffee')
 let submitCoffee = document.querySelector("#submitForAdd")
+let addedCoffeeDone = document.getElementById("submitCoffee")
 tbody.innerHTML = renderCoffees(coffees);
 
 submitButton.addEventListener('click', updateCoffees);
 roastSelection.addEventListener("change",updateCoffeesByRoast )
 searchBar.addEventListener("input", updateCoffeesByName)
 submitCoffee.addEventListener("click", addCoffee)
+addedCoffeeDone.addEventListener("click", function handleSubmit(event) {
+        event.preventDefault();
+        roastInput.value = ""
+    })
 
