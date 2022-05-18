@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Abel&family=Anton&family=Rye&display=swap" rel="stylesheet">
 </head>
-<body class="mx-5">
+<body>
 <div class="video-wrapper">
     <video playsinline autoplay muted loop poster="cake.jpg">
         <source src="img/coffeevid.mp4" type="video/webm">
@@ -21,7 +21,7 @@
     <h1 class="header row justify-content-center text-white">Coffee!</h1>
 
     <hr/>
-    <div class="row d-flex">
+    <div class="row d-flex" id="midsection">
         <div id="coffeeList" class="col opacity-80 d-flex w-50">
 <!--            <table>-->
 <!--                <thead>-->
@@ -47,7 +47,7 @@
             <div>
                 <label for="search"><h5 class="text-white">Coffee Name</h5></label>
                 <input type="text" id="search" class=" w-100 mb-2">
-                <input class="d-flex w-100 justify-content-center text-bg-primary rounded-2 border-0" id="submit" type="submit" />
+                <input class="d-flex w-100 justify-content-center rounded-2 border-0" id="submit" type="submit" />
             </div>
         </div>
         <hr/>
@@ -67,7 +67,7 @@
                 <div>
                     <label for="add"><h5 class="text-white">Name</h5></label>
                     <input type="text" id="add" class=" w-100 mb-2">
-                    <input class="d-flex w-100 justify-content-center text-bg-primary rounded-2 border-0" id="submitForAdd" type="submit" />
+                    <input class="d-flex w-100 justify-content-center rounded-2 border-0" id="submitForAdd" type="submit" />
                 </div>
             </div>
         </div>

@@ -53,8 +53,6 @@ video {
     be relative to this element */
     position: relative;
 
-    width: 400px;
-    height: 200px;
 
     /* Will not allow the video to overflow the
     container */
@@ -68,10 +66,55 @@ video {
     justify-content: center;
 }
 
-#coffeeList {
-
+#coffees {
+    background: rgba(130, 116, 94, .8);
+    border: ghostwhite solid;
+    border-radius: 10px;
+    margin-right: 2em;
 }
 
 .header {
     font-family: 'Rye', sans-serif;
+    background: rgba(130, 116, 59, 1);
+    border-bottom: ghostwhite solid;
+}
+
+#midsection {
+    margin: 4em;
+}
+
+#form {
+    background: rgba(130, 116, 94, .8);
+    border: ghostwhite solid;
+    border-radius: 10px;
+}
+
+#submit {
+    background: rgba(130, 116, 94, .9);
+    color: ghostwhite;
+}
+
+#search {
+    background-color: grey;
+    color: ghostwhite;
+}
+
+#roast-selection {
+    background-color: grey;
+    color: ghostwhite;
+}
+
+#roast-selection-add {
+    background-color: grey;
+    color: white;
+}
+
+#add {
+    background-color: grey;
+    color: white;
+}
+
+#submitForAdd {
+    background: rgba(130, 116, 94, .9);
+    color: ghostwhite;
 }
